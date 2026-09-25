@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ヒアリングシート | Beauty Salon Elizabetta 様</title>
+<meta name="description" content="Beauty Salon Elizabetta 塩野様に、現状とお考えをお伺いするためのヒアリングシートです。">
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;500;600;700&family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#FAFAF6;
+    --panel:#FFFFFF;
+    --text:#262422;
+    --text-muted:#6E6A62;
+    --line:#E3DFD5;
+    --accent:#6C7A5C;
+    --accent-soft:#EEF0E8;
+    --serif:'Shippori Mincho', serif;
+    --sans:'Noto Sans JP', sans-serif;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--sans);
+    font-weight:300;
+    line-height:1.9;
+    -webkit-font-smoothing:antialiased;
+  }
+  header{
+    padding:28px 24px;
+    border-bottom:1px solid var(--line);
+    background:var(--bg);
+  }
+  header nav{
+    max-width:720px;
+    margin:0 auto;
+    display:flex;
+    align-items:baseline;
+    justify-content:space-between;
+  }
+  .brand{
+    font-family:var(--serif);
+    font-size:17px;
+    letter-spacing:.04em;
+    color:var(--text);
+    text-decoration:none;
+  }
+  .brand span{color:var(--text-muted);font-size:11px;font-family:var(--sans);letter-spacing:.08em;margin-left:8px;}
+
+  main{max-width:720px;margin:0 auto;padding:64px 24px 120px;}
+
+  .intro h1{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:clamp(24px,4vw,30px);
+    margin:0 0 20px;
+    line-height:1.6;
+  }
+  .intro p{
+    color:var(--text-muted);
+    font-size:14.5px;
+    margin:0 0 12px;
+  }
+
+  .notice{
+    margin-top:36px;
+    padding:22px 24px;
+    background:var(--accent-soft);
+    border-left:3px solid var(--accent);
+    font-size:13.5px;
+    color:var(--text);
+    line-height:2.0;
+  }
+
+  form{margin-top:56px;}
+
+  fieldset{
+    border:none;
+    padding:0;
+    margin:0 0 48px;
+  }
+  .step-no{
+    font-family:var(--serif);
+    color:var(--accent);
+    font-size:13px;
+    margin-bottom:6px;
+  }
+  legend{
+    font-family:var(--serif);
+    font-weight:600;
+    font-size:18px;
+    margin-bottom:8px;
+    padding:0;
+  }
+  .field-note{
+    color:var(--text-muted);
+    font-size:13px;
+    margin:0 0 16px;
+  }
+
+  label.line{
+    display:block;
+    font-size:13.5px;
+    color:var(--text-muted);
+    margin-bottom:6px;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="tel"],
+  input[type="date"],
+  textarea{
+    width:100%;
+    padding:12px 14px;
+    border:1px solid var(--line);
+    border-radius:2px;
+    background:var(--panel);
+    font-family:var(--sans);
+    font-size:14.5px;
+    color:var(--text);
+    margin-bottom:22px;
+  }
+  textarea{resize:vertical;min-height:90px;}
+  input:focus, textarea:focus{
+    outline:none;
+    border-color:var(--accent);
+  }
+
+  .choice-grid{
+    display:flex;
+    flex-wrap:wrap;
+    gap:10px;
+    margin-bottom:8px;
+  }
+  .choice{
+    position:relative;
+  }
+  .choice input{
+    position:absolute;
+    opacity:0;
+    width:100%;height:100%;
+    margin:0;
+    cursor:pointer;
+  }
+  .choice span{
+    display:inline-block;
+    padding:9px 16px;
+    border:1px solid var(--line);
+    border-radius:20px;
+    font-size:13.5px;
+    color:var(--text-muted);
+    background:var(--panel);
+    transition:border-color .15s, color .15s, background .15s;
+  }
+  .choice input:checked + span{
+    border-color:var(--accent);
+    color:var(--text);
+    background:var(--accent-soft);
+  }
+
+  textarea.optional::placeholder{
+    color:#B5B1A6;
+    font-size:12.5px;
+  }
+
+  .row2{display:grid; grid-template-columns:1fr 1fr; gap:0 16px;}
+  @media (max-width:560px){ .row2{grid-template-columns:1fr;} }
+
+  button{
+    width:100%;
+    padding:16px;
+    background:var(--text);
+    color:#fff;
+    border:none;
+    border-radius:2px;
+    font-family:var(--serif);
+    font-size:15px;
+    letter-spacing:.05em;
+    cursor:pointer;
+    transition:background .15s;
+  }
+  button:hover{background:var(--accent);}
+
+  .agree-note{
+    font-size:12.5px;
+    color:var(--text-muted);
+    margin-top:18px;
+    line-height:1.9;
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="brand">しんせら工房 <span>Web Design</span></a>
+  </nav>
+</header>
+
+<main>
+  <div class="intro">
+    <h1>Beauty Salon Elizabetta<br>塩野様専用ヒアリングシート</h1>
+    <p>今の状況や、ホームページで叶えたいことを聞かせていただくためのシートです。答えにくい項目は空欄のままで大丈夫です。</p>
+  </div>
+
+  <form action="https://formspree.io/f/mjykowpd" method="POST">
+    <input type="hidden" name="_subject" value="【ヒアリングシート】Beauty Salon Elizabetta 塩野様">
+
+    <fieldset>
+      <div class="step-no">01</div>
+      <legend>現在の集客について</legend>
+      <p class="field-note">今、活用されている集客手段はどれですか？（複数可）</p>
+      <div class="choice-grid">
+        <label class="choice"><input type="checkbox" name="現在の集客について" value="Instagram"><span>Instagram</span></label>
+        <label class="choice"><input type="checkbox" name="現在の集客について" value="口コミ・ご紹介"><span>口コミ・ご紹介</span></label>
+        <label class="choice"><input type="checkbox" name="現在の集客について" value="BNI・異業種交流"><span>BNI・異業種交流</span></label>
+        <label class="choice"><input type="checkbox" name="現在の集客について" value="特になし"><span>特になし</span></label>
+      </div>
+      <label class="line" for="other_channel">その他</label>
+      <textarea id="other_channel" class="optional" name="現在の集客について（その他）"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">02</div>
+      <legend>新規のお客様の経路</legend>
+      <label class="line" for="new_client">新規のお客様は、主にどうやってサロンを見つけていると感じますか？</label>
+      <textarea id="new_client" class="optional" name="新規のお客様の経路"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">03</div>
+      <legend>Instagram・公式LINEの運用について</legend>
+      <p class="field-note">今のInstagramと公式LINE（予約）の運用でお困りのことや「もっとこうしたい！」と感じることはありますか？（なければ空欄で構いません）</p>
+      <textarea name="Instagram・公式LINEの運用について" placeholder="例：DMや予約のやり取りが大変、投稿ネタに迷う、特に不満はない など"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">04</div>
+      <legend>集客以外の課題</legend>
+      <p class="field-note">予約管理・顧客管理など、日々の運営面で困っていることはありますか？</p>
+      <textarea name="集客以外の課題" placeholder="例：予約管理が大変／特になし　など"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">05</div>
+      <legend>ホームページで叶えたいこと</legend>
+      <p class="field-note">今回叶えたいことを教えてください（複数可）</p>
+      <div class="choice-grid">
+        <label class="choice"><input type="checkbox" name="ホームページで叶えたいこと" value="新規のお客様を増やしたい"><span>新規のお客様を増やしたい</span></label>
+        <label class="choice"><input type="checkbox" name="ホームページで叶えたいこと" value="予約、問い合わせをHPで一括管理したい"><span>予約、問い合わせをHPで一括管理したい</span></label>
+        <label class="choice"><input type="checkbox" name="ホームページで叶えたいこと" value="お店の信頼感を出したい"><span>信頼感を出したい</span></label>
+        <label class="choice"><input type="checkbox" name="ホームページで叶えたいこと" value="メニューや料金を伝えたい"><span>メニュー・料金を伝えたい</span></label>
+        <label class="choice"><input type="checkbox" name="ホームページで叶えたいこと" value="Instagramと合わせて見てもらいたい"><span>Instagramと合わせて見てもらいたい</span></label>
+      </div>
+      <label class="line" for="purpose_other">その他</label>
+      <textarea id="purpose_other" class="optional" name="ホームページで叶えたいこと（その他）"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">06</div>
+      <legend>ご希望の雰囲気</legend>
+      <label class="line" for="hp_atmosphere">どんな雰囲気に仕上げたいですか？（複数可）</label>
+      <div class="choice-grid">
+        <label class="choice"><input type="checkbox" name="ご希望の雰囲気" value="上品・シンプル"><span>上品・シンプル</span></label>
+        <label class="choice"><input type="checkbox" name="ご希望の雰囲気" value="高級感"><span>高級感</span></label>
+        <label class="choice"><input type="checkbox" name="ご希望の雰囲気" value="あたたかみ"><span>あたたかみ</span></label>
+        <label class="choice"><input type="checkbox" name="ご希望の雰囲気" value="ナチュラル"><span>ナチュラル</span></label>
+        <label class="choice"><input type="checkbox" name="ご希望の雰囲気" value="親しみやすい"><span>親しみやすい</span></label>
+        <label class="choice"><input type="checkbox" name="ご希望の雰囲気" value="思いやりのある雰囲気"><span>思いやりのある雰囲気</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">07</div>
+      <legend>参考にしたいイメージ</legend>
+      <label class="line" for="hp_ref">「こんな感じが良い」と思うサロンのHPやInstagramがあれば教えてください</label>
+      <textarea id="hp_ref" class="optional" name="参考にしたいイメージ" placeholder="URLや店名、気に入っている点など"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">08</div>
+      <legend>デザインの色について</legend>
+      <p class="field-note">デザインの色に関してどんな色がいいですか？また、これはNGなどの色があれば教えてください。<br>入力欄にカラーコードを直接入力していただく形でも大丈夫です。</p>
+      <div class="choice-grid">
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="赤系"><span>赤系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="青系"><span>青系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="黄系"><span>黄系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="黒系"><span>黒系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="白系"><span>白系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="ベージュ系"><span>ベージュ系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="ピンク系"><span>ピンク系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="ゴールド系"><span>ゴールド系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="グリーン系"><span>グリーン系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="パープル系"><span>パープル系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="ブラウン系"><span>ブラウン系</span></label>
+        <label class="choice"><input type="checkbox" name="デザインの色について" value="グレー系"><span>グレー系</span></label>
+      </div>
+      <textarea id="hp_color" class="optional" name="デザインの色について（自由記入）"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">09</div>
+      <legend>HPで欲しい機能</legend>
+      <p class="field-note">ホームページに入れたいものを選んでください（複数可）</p>
+      <div class="choice-grid">
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="予約フォーム"><span>予約フォーム</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="問い合わせフォーム"><span>問い合わせフォーム</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="メニュー・料金表"><span>メニュー・料金表</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="地図・アクセス"><span>地図・アクセス</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="お客様の声"><span>お客様の声</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="写真ギャラリー"><span>写真ギャラリー</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="Instagramの投稿を表示"><span>Instagramの投稿を表示</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="公式LINEへのボタン"><span>公式LINEへのボタン</span></label>
+        <label class="choice"><input type="checkbox" name="HPで欲しい機能" value="ブログ"><span>ブログ</span></label>
+      </div>
+      <label class="line" for="feature_other">その他</label>
+      <textarea id="feature_other" class="optional" name="HPで欲しい機能（その他）"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">10</div>
+      <legend>ページ構成について</legend>
+      <p class="field-note">HPは1ページで済ませたいですか？それとも、項目によってリンク先を作る複数ページがいいですか？</p>
+      <div class="choice-grid">
+        <label class="choice"><input type="radio" name="ページ構成について" value="1ページにまとめたい"><span>1ページにまとめたい</span></label>
+        <label class="choice"><input type="radio" name="ページ構成について" value="項目ごとにページを分けたい"><span>項目ごとにページを分けたい</span></label>
+        <label class="choice"><input type="radio" name="ページ構成について" value="わからない・おまかせしたい"><span>わからない・おまかせしたい</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">11</div>
+      <legend>HPの運用について</legend>
+      <p class="field-note">レンタルサーバーや独自ドメインの取得先はご自身で探されますか？</p>
+      <div class="choice-grid">
+        <label class="choice"><input type="radio" name="HPの運用について" value="自分で探す"><span>自分で探す</span></label>
+        <label class="choice"><input type="radio" name="HPの運用について" value="おまかせしたい"><span>おまかせしたい</span></label>
+      </div>
+      <label class="line" for="server_pref">希望がある場合、参考にしたいのでこちらにお教えいただけますと助かります</label>
+      <textarea id="server_pref" class="optional" name="HPの運用について（希望の詳細）"></textarea>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">12</div>
+      <legend>更新作業について</legend>
+      <label class="line" for="who_updates">実際にホームページを使い始めたら、内容の更新（写真の入れ替えなど）はご自身でされたいですか？</label>
+      <div class="choice-grid">
+        <label class="choice"><input type="radio" name="更新作業について" value="はい"><span>はい</span></label>
+        <label class="choice"><input type="radio" name="更新作業について" value="いいえ"><span>いいえ</span></label>
+      </div>
+    </fieldset>
+
+    <fieldset>
+      <div class="step-no">13</div>
+      <legend>その他</legend>
+      <p class="field-note">聞かれていないことでも、伝えておきたいことがあれば自由にご記入ください。</p>
+      <textarea name="その他" placeholder="何でもご記入ください"></textarea>
+    </fieldset>
+
+    <button type="submit">この内容で送信する</button>
+    <p class="agree-note">ご回答は、今後どうするかを一緒に考えるための参考にのみ使わせていただきます。</p>
+  </form>
+</main>
+
+</body>
+</html>
